@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/logo putih.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/logo putih.png" />
+      <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <title>Vail Studio</title>
+    <style>
+      .navbar-blur {
+          backdrop-filter: blur(8px);
+          background-color: rgba(0, 0, 0, 0);
+      }
+
+      html{
+        scroll-behavior: smooth;
+      }
+
+      .card:hover {
+        transform: scale(1.10);
+        transition: transform 0.7s ease;
+      }
+  </style>
+  </head>
+
+  <body class="text-gray-800 antialiased">
+    <!-- INI NAVBAR -->
+    <nav id="navbar"
+      class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-blur transition">
+      <div
+        class="container mx-auto flex flex-wrap items-center justify-between">
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <a
+            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-200 dark:text-gray-80"
+            href="#">
+            <img src="assets/img/logo putih.png" alt="Vail Studio Logo"
+              class="inline-block h-8 ml-2 mx-2">
+            Vail Studio
+          </a>
+          <button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button" onclick="toggleNavbar('example-collapse-navbar')">
+            <i class="text-gray-200 fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- INI SOSMED DI NAVBAR -->
+        <div class="lg:flex flex-grow items-center lg:shadow-none hidden"
+          id="example-collapse-navbar">
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-gray-400 lg:hover:text-gray-300 text-gray-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.instagram.com/vail_studio/">
+                <i
+                  class="lg:text-gray-300 text-gray-400 fab fa-instagram text-lg leading-lg"></i>
+                <span class="lg:hidden inline-block ml-2">Instagram</span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-gray-400 lg:hover:text-gray-300 text-gray-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://api.whatsapp.com/send?phone=62895408199966">
+                <i
+                  class="lg:text-gray-300 text-gray-400 fab fa-whatsapp text-lg leading-lg"></i>
+                <span class="lg:hidden inline-block ml-2">Whatsapp</span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <button
+                class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                type="button">
+                <a href="#pricing"><i class="fas fa-money-bill-wave"></i> Pricing</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 75vh">
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style="
+            background-image: url('assets/img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg');
+          ">
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class=" items-center">
+                <h1 class="text-green-500 font-semibold text-5xl section-to-animate opacity-0 transition-opacity duration-1000">
+                  Where Creativity Meets Code.
+                </h1>
+                <p class="mt-4 text-lg text-gray-300 section-to-animate opacity-0 transition-opacity duration-1000">
+                  At <b>Vail Studio</b>, we mix fresh design with top-notch web
+                  development to create eye-catching brands and smooth digital
+                  experiences. Let’s turn your vision into reality!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INI CARD SERVICE 3 AWAL -->
+      <section class="pb-20 bg-white -mt-24">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class=" pt-6 w-full md:w-4/12 px-4 text-center section-to-animate opacity-0 transition-opacity duration-1000">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-500">
+                    <i class="fas fa-pen-nib"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Creative Graphic Design</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Level up your brand with dope graphics, from logos to
+                    marketing swag!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center section-to-animate opacity-0 transition-opacity duration-1000">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-500">
+                    <i class="fas fa-laptop-code"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Professional Web Development</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Get a killer website that’s not just pretty but works like a
+                    charm for your biz!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center section-to-animate opacity-0 transition-opacity duration-1000">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-500">
+                    <i class="fas fa-lightbulb"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Comprehensive Branding
+                    Solutions</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Let’s craft a unique brand vibe with cool logos, fresh
+                    colors, and style guides!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex flex-wrap items-center mt-20">
+            <div class="pb-4 w-full md:w-5/12 px-4 mr-auto ml-auto section-to-animate opacity-0 transition-opacity duration-1000">
+              <div
+                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+                <i class="fas fa-code text-xl"></i>
+              </div>
+              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                Why Choose Our Services
+              </h3>
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                We offer carefully crafted packages to meet every business need. Our services are tailored for various levels of growth:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                  <span class="font-bold">Basic:</span> Perfect for startups or personal brands. Get a clean, professional website to kickstart your online presence.
+                </li>
+                <li class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                  <span class="font-bold">Standard:</span> Ideal for small to medium-sized businesses. Includes additional customization and features to showcase your brand.
+                </li>
+                <li class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                  <span class="font-bold">Premium:</span> A comprehensive solution for businesses looking for a powerful, fully customized website with advanced features.
+                </li>
+              </ul>
+              
+            </div>
+            <div class="pt-4 w-full md:w-4/12 px-4 mr-auto ml-auto section-to-animate opacity-0 transition-opacity duration-1000">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-black w-full mb-6 shadow-xl rounded-lg">
+                <img
+                  alt="..."
+                  src="assets/img/logo putih.png"
+                  class="w-full align-middle rounded-t-lg" />
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px">
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="text-black fill-current"></polygon>
+                  </svg>
+                  <h4 class="text-xl font-bold text-green-500">
+                    Working with Vail Studio
+                  </h4>
+                  <p class="text-md text-justify font-light mt-2 text-white">
+                    We ensure a seamless and enjoyable collaboration from consultation to delivery, with clear communication and results that exceed expectations. Whether you need a simple website or a complete branding package, our designs are visually striking and strategically aligned with your business goals.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN 2 -->
+      <section class="pricing relative">
+        <div id="pricing"
+        class="flex flex-col items-center justify-center p-20 text-green-500 bg-black md:p-20">
+        <div class="flex flex-col items-center justify-center section-to-animate opacity-0 transition-opacity duration-1000">
+          <h2 class="text-5xl font-bold [text-shadow:2px_2px_4px_rgba(34,197,94,0.7)]">
+            Our Creative Offerings
+          </h2>
+          <p class="mt-6 text-gray-400">Discover our tailored web development services designed to elevate your online presence and showcase your brand.</p>
+        </div>
+        
+
+        <!-- Component Start -->
+        <div class="flex flex-wrap items-center justify-center w-full max-w-4xl py-10">
+          <!-- Kartu Basic -->
+          <div class="section-to-animate opacity-0 transition-opacity duration-1000 card flex flex-col flex-grow mt-8 overflow-hidden text-gray-700 bg-white rounded-lg shadow-lg order-1">
+            <div class="flex flex-col items-center p-10 bg-gray-200">
+              <span class="font-semibold text-lg">Basic</span>
+              <div class="flex items-center">
+                <span class="text-3xl">IDR</span>
+                <span class="text-5xl font-bold">100</span>
+                <span class="text-2xl text-gray-500">K</span>
+              </div>
+            </div>
+            <div class="py-10 px-5 md:px-10">
+              <ul>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">Responsive Design</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">Basic Theme</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">Home Page</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex px-10 pb-10 justify-center">
+              <button class="flex items-center justify-center w-full h-12 px-6 bg-gray-200 rounded-lg">
+                <a href="https://wa.me/6281398430846" class="flex items-center justify-center w-full h-12 px-6 font-semibold bg-gray-200 rounded-lg leading-none">Select Plan</a>
+              </button>
+            </div>
+          </div>
+        
+          <!-- Kartu Premium -->
+          <div class="section-to-animate opacity-0 transition-opacity duration-1000 card z-10 flex flex-col flex-grow mt-8 overflow-hidden transform text-gray-700 bg-white rounded-lg shadow-lg order-3 md:order-2">
+            <div class="flex flex-col items-center p-10 bg-gray-200">
+              <span class="font-semibold text-lg">Premium</span>
+              <div class="flex items-center">
+                <span class="text-3xl">IDR</span>
+                <span class="text-6xl font-bold">500</span>
+                <span class="text-2xl text-gray-500">K</span>
+              </div>
+            </div>
+            <div class="py-10 px-5 md:px-10">
+              <ul>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">All Standard Features</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">Custom Theme</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">Unlimited Pages</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">Interactive Features</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">Fully Custom Design</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex px-10 pb-10 justify-center">
+              <button class="flex items-center justify-center w-full h-12 px-6 bg-gray-200 rounded-lg">
+                <a href="https://wa.me/6281398430846" class="flex items-center justify-center w-full h-12 px-6 font-semibold bg-gray-200 rounded-lg leading-none">Select Plan</a>
+              </button>
+            </div>
+          </div>
+        
+          <!-- Kartu Standard -->
+          <div class="section-to-animate opacity-0 transition-opacity duration-1000 card flex flex-col flex-grow mt-8 overflow-hidden text-gray-700 bg-white rounded-lg shadow-lg order-2 md:order-3">
+            <div class="flex flex-col items-center p-10 bg-gray-200">
+              <span class="font-semibold text-lg">Standard</span>
+              <div class="flex items-center">
+                <span class="text-3xl">IDR</span>
+                <span class="text-5xl font-bold">250</span>
+                <span class="text-2xl text-gray-500">K</span>
+              </div>
+            </div>
+            <div class="py-10 px-5 md:px-10">
+              <ul>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">All Basic Features</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">Modern Theme</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="ml-2">Additional Pages</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex px-10 pb-10 justify-center">
+              <button class="flex items-center justify-center w-full h-12 px-6 bg-gray-200 rounded-lg">
+                <a href="https://wa.me/6281398430846" class="flex items-center justify-center w-full h-12 px-6 font-semibold bg-gray-200 rounded-lg leading-none">Select Plan</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Component End  -->
+      </div>
+      </section>
+
+      <!-- INI PRICING -->
+      
+
+      <section class="py-20">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center text-center mb-24 section-to-animate opacity-0 transition-opacity duration-1000">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold">Our Creative Minds</h2>
+              <p class="text-lg leading-relaxed m-4 text-gray-600">
+                <b>Vail Studio</b> is founded by Deva and Ismail, where
+                creativity vibes with tech skills. We're all about serving up
+                awesome branding and web solutions to help businesses shine.
+                Come hang out and get to know us!
+              </p>
+            </div>
+          </div>
+      
+          <!-- INI CARD OWNER -->
+          <div class="flex flex-wrap content-center items-center justify-center">
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 section-to-animate opacity-0 transition-opacity duration-1000">
+              <div class="px-6">
+                <img
+                  alt="Deva Ronaldo"
+                  src="assets/img/devrnaldo.jpg"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  style="max-width: 120px" />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Deva Ronaldo</h5>
+                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                    Frontend Programmer
+                  </p>
+                  <div class="mt-6">
+                    <button
+                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                      onclick="window.open('https://www.instagram.com/devrnaldo/', '_blank')">
+                      <i class="fab fa-instagram"></i>
+                    </button>
+                    <button
+                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                      onclick="window.open('https://x.com/devrnaldo', '_blank')">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button
+                      class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                      onclick="window.open('https://wa.me/6281398430846', '_blank')">
+                      <i class="fab fa-whatsapp"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 section-to-animate opacity-0 transition-opacity duration-1000">
+              <div class="px-6">
+                <img
+                  alt="Ismail Maziidi"
+                  src="assets/img/ismailmaziidi.jpg"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  style="max-width: 120px" />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Ismail Maziidi</h5>
+                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                    Backend Programmer
+                  </p>
+                  <div class="mt-6">
+                    <button
+                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                      onclick="window.open('https://www.instagram.com/ismailmaziidi/', '_blank')">
+                      <i class="fab fa-instagram"></i>
+                    </button>
+                    <button
+                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                      onclick="window.open('https://x.com/', '_blank')">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button
+                      class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                      onclick="window.open('https://wa.me/62895408199966', '_blank')">
+                      <i class="fab fa-whatsapp"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>      
+
+      <!-- Tombol Scroll to Top -->
+      <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top"
+        class="fixed z-50 bottom-4 right-4 bg-black text-white font-bold text-lg p-4 rounded-full border-white border hidden hover:bg-gray-700 transition">
+        ↑
+      </button>
+
+    </main>
+    <footer class="mx-auto w-full bg-black dark:bg-gray-900">
+      <div class="mx-auto w-full p-20 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="https://flowbite.com/" class="flex items-center">
+              <img src="assets/img/logo putih.png" class="h-8 mr-2"
+                alt="Vail Logo" />
+              <span
+                class="self-center text-xl font-semibold whitespace-nowrap text-gray-300 dark:text-white">Vail
+                Studio</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-green-500 uppercase dark:text-white">Follow
+                us</h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="https://instagram.com/vail_studio/"
+                    class="hover:underline">Instagram</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold uppercase text-green-500 dark:text-white">Legal</h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="my-6 border-gray-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span
+            class="text-sm text-gray-500 sm:text-center dark:text-gray-400">©
+            2024 <a href="https://instagram.com/vail_studio/" class="hover:underline">Vail
+              Studio</a>. All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+  <!-- SCRIPT JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.section-to-animate');
+  
+      const options = {
+        threshold: 0.5 // Trigger when 50% of the section is visible
+      };
+  
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0');
+            observer.unobserve(entry.target); // Stop observing once it's animated
+          }
+        });
+      }, options);
+  
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+  
+
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+
+    // Menampilkan tombol saat scroll ke bawah
+    window.onscroll = function() {
+      showScrollButton();
+    };
+    function showScrollButton() {
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    }
+
+    // Fungsi untuk kembali ke atas
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</html>
